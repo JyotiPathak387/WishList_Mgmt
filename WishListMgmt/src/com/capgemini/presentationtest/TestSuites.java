@@ -17,7 +17,7 @@ import com.capgemini.servicetest.ServiceTestCases;
 
 @SuiteClasses({
 	PresentationTestCases.class,
-	ServiceTestCases.class,
+	//ServiceTestCases.class,
 	DaoTestCases.class
 })
 public class TestSuites {

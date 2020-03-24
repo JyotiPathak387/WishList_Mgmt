@@ -21,20 +21,28 @@ public class DaoTestCases {
 	
 	//Testing methods
 	@Test
-	public void validTestProductId1() {
-		Assert.assertEquals(true,dt.validTestProductId("P104"));
+	public void testProductIdForLength() {
+		Assert.assertEquals(true,dt.testProductIdForLength("P104"));
 		
 	}
 	
 
 	@Test
-	public void testNameLength() {
-		Assert.assertEquals(true,dt.validProductIdLength("P105"));
+	public void testProductIdName() {
+		Assert.assertEquals(true,dt.testProductIdName("P105"));
 		
 	}
 	
+	@Test
+	/*public void testvalidProductId() {
+		Assert.assertEquals(false,dt. testvalidProductId("P105"));
+		
+	}*/
 
-
+    public void testProductIdForNullValues()
+    {
+    	Assert.assertEquals(true,dt.testProductForNullValues(""));
+    }
 	@After
 	public void cleanUp() {
 		dt = null;

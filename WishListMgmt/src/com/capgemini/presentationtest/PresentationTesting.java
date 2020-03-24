@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class PresentationTesting {
 
-	public boolean validChoice(int v) {
+	public boolean testvalidChoice(int v) {
     	boolean flag=false;
     	if(v==1 ||v==2) {
     		flag=true;

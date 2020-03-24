@@ -1,5 +1,6 @@
 package com.capgemini.eis.dao;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -12,7 +13,17 @@ import com.capgemini.eis.service.WishListServiceImpl;
 
 public class WishListDaoImpl implements IWishListDao{
 
+	private static ArrayList<ProductDTO> productlist=new ArrayList<ProductDTO>();
 
+	public static ArrayList<ProductDTO> getProductlist()
+	{
+		return productlist;
+	}
+	
+	public void setProductlist(ArrayList<ProductDTO> productlist)
+	{
+		WishListDaoImpl.productlist =productlist;
+	}
 	//static  HashMap<String, ProductDTO> wlist1=new HashMap<String , ProductDTO>(); 
 		WishListServiceImpl WishlistDaoImplObj=new WishListServiceImpl();
 		static Scanner scan=new Scanner(System.in);

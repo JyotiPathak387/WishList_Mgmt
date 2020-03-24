@@ -15,16 +15,18 @@ public class ServiceTestCases {
 			st = new ServiceTesting();
 		}
 	   
-	   @Test
-		public void validateProductId() {
-			Assert.assertEquals(true,st.validateProductId("P103"));
+	   @SuppressWarnings("deprecation")
+	@Test
+		public void testProductId() {
+			Assert.assertEquals(true,st.testProductId("P103"));
 			
 		}
-	/*	@Test
-		public void validateProduct() {
-			Assert.assertEquals(true,st.validateProductId(""));
+	   
+	   @Test
+		public void testProductIdForNullValues() {
+			Assert.assertEquals(false,st.testProductIdForNullValues(""));
 			
-		}*/
+		}
 		
 		@After
 		public void cleanUp() {

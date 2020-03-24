@@ -18,8 +18,8 @@ public class PresentationTestCases {
 		}
 	   
 	   @Test
-		public void validateChoice() {
-		   Assert.assertEquals(true,ct.validChoice(1));
+		public void testvalidChoice() {
+		   Assert.assertEquals(true,ct.testvalidChoice(1));
 			
 		}
 	  
